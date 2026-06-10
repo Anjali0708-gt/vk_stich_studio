@@ -2,37 +2,32 @@ import react from 'react';
 import { BrowserRouter,Link,Routes,Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
+import Navbar from './components/Navbar';
 import About from './pages/About';
 import Service from './pages/Service';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Addtocart from './pages/Addtocart';
+
 function App()
 {
   return(
     <>
-      <BrowserRouter>
-      <nav>
-        <div className="logo">
-
-        </div>
-
-        <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to='/service'>Service</Link>
-         <Link to='/contact'>Contact</Link>
-          <Link to='/gallery'>Gallery</Link>
-          </div>
-          </nav>
-          
+    <Navbar />
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Addtocart />} />
         </Routes>
-      </BrowserRouter>
+
+        
+      
     </>
     
     
