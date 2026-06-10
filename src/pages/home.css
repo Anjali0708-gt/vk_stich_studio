@@ -1,0 +1,53 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    background: #f8f5f0;
+    gap: 50px;
+}
+
+.herosection{
+    flex: 1;
+    max-width: 600px;
+}
+
+.container-h1 h1{
+    font-size: 1.5rem;
+    color: #b8860b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.herosection h2{
+    font-size: 2rem;
+    color: #222;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.herosection p{
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.side-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.side-img img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
