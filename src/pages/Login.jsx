@@ -8,23 +8,25 @@ import './login.css';
 function Login()
 {
      const [username, setUsername] = useState('');
-     const[password,setpassword]=useState('');
-     const handleLogin = async () => {
+     const[password,setPassword]=useState('');
+     const handleLogin = async (e) => {
+        e.preventDefault();
         console.log('Username:', username);
-    //     try {
-    //         const req = await axios.post('http://localhost:3000/api/login', { username, password });
-    //         console.log(req.data);
-    //         toast.success('Login successful!');
-    //     } catch (error) {
-    //         console.error('Error logging in:', error);
-    //         toast.error('Login failed!');
-    //     }
+        try {
+            // const req = await axios.post('http://localhost:3000/api/login', { username, password });
+            // console.log(req.data);
+            toast.success('Login successful!');
+        } catch (error) {
+            console.error('Error logging in:', error);
+            toast.error('Login failed!');
+        }
       }
 
 
     return(
         
     <>
+    <ToastContainer />
         <div className="logincontainer">
             
             <div className="login-form">
@@ -40,10 +42,12 @@ function Login()
             </div>
 
         </div>
+        
     </>
     
     )
     
 }
+
 
 export default Login;
