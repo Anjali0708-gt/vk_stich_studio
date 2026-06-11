@@ -36,6 +36,28 @@
     line-height: 1.8;
     margin-bottom: 30px;
 }
+.btn-hero{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    background: #6c9af0;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #9c6f08;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(184,134,11,0.3);
+}
 
 .side-img{
     flex: 1;

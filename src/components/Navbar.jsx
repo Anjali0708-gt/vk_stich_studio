@@ -9,11 +9,11 @@ function Navbar()
     
    < nav>
         <div className="logo">
-          <img src="\public/Gemini_Generated_Image_jq9j61jq9j61jq9j.png" alt="logo" />
+         <Link to="/"> <img src="\public/Gemini_Generated_Image_jq9j61jq9j61jq9j.png" alt="logo" /> </Link>
         </div>
 
         <div className="nav-links">
-        <Link to="/">Home</Link>
+        <Link to="">Home</Link>
         <Link to="/about">About</Link>
         <Link to='/service'>Service</Link>
          <Link to='/contact'>Contact</Link>
@@ -27,7 +27,9 @@ function Navbar()
             <Link to='/cart'><FaShoppingCart /></Link>
             </div>
           </div>
+          
           </nav>
+          
 
     
     )

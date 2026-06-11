@@ -9,6 +9,9 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Addtocart from './pages/Addtocart';
+import BookAppointment from './pages/BookAppointment';
+import ForgetPassword from './pages/ForgetPassword';
+import Signup from './pages/Signup';
 
 function App()
 {
@@ -24,6 +27,10 @@ function App()
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Addtocart />} />
+          <Route path="/bookappointment" element={<BookAppointment/>} 
+          />
+          <Route path="/forgot-password" element={<ForgetPassword />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
 
         
